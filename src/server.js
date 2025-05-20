@@ -36,6 +36,7 @@ app.use(
   })
 );
 
+
 // Routes----------------
 app.use(studentRouter);
 app.use(classRouter);
