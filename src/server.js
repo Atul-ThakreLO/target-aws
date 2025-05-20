@@ -30,7 +30,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // frontend URL without trailing slash
+    origin: process.env.FRONT_END_URL, // frontend URL without trailing slash
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
