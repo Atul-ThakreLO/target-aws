@@ -57,5 +57,5 @@ app.use(resultRouter);
 app.use(handleError);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on ${PORT} for ${process.env.FRONT_END_URL}`);
 });
